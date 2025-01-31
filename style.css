@@ -156,9 +156,8 @@ header .logo {
     }
 }
 
-/* MATRIX BACKGROUND */
 #matrix-bg {
-    position: fixed;  /* Fix it to the viewport */
+    position: fixed;  
     top: 0;
     left: 0;
     width: 100vw;
@@ -236,25 +235,25 @@ h2 {
 
 .about-text {
     display: flex;
-    justify-content: center; /* Centers the text horizontally */
-    align-items: center;     /* Centers the text vertically */
-    text-align: center;      /* Ensures the text inside the div is centered */
-    padding: 20px;           /* Adds padding around the text */
-    background-color: #f4f4f4; /* Light background for the section */
-    border-radius: 8px;      /* Rounded corners for a soft look */
-    max-width: 800px;        /* Sets a max width to prevent it from becoming too wide */
-    margin: 0 auto;          /* Centers the div horizontally in the page */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow for depth */
+    justify-content: center; 
+    align-items: center;   
+    text-align: center;     
+    padding: 20px;        
+    background-color: #f4f4f4; 
+    border-radius: 8px;     
+    max-width: 800px;        
+    margin: 0 auto;         
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
     margin-bottom: 30px; 
 }
 
 .about-text p {
-    font-size: 16px;         /* Controls the font size */
-    color: #333;             /* Sets the text color */
-    line-height: 1.6;        /* Increases line spacing for readability */
-    font-weight: 400;        /* Makes the font weight normal */
-    max-width: 700px;        /* Ensures text doesn't stretch too far */
-    margin: 0 auto;          /* Ensures the paragraph is centered */
+    font-size: 16px;         
+    color: #333;             
+    line-height: 1.6;        
+    font-weight: 400;        
+    max-width: 700px;        
+    margin: 0 auto;         
 }
 .skills-container {
     display: flex;
@@ -382,117 +381,35 @@ h2 {
     margin: 0.5rem;
     border-radius: 5px;
     font-size: 1.2rem;
-    cu
-@media screen and (max-width: 768px) {
-    /* Navigation */
-    header {
-        flex-direction: column;
-        padding: 1rem;
-    }
-
-    header .nav-links {
-        margin-top: 1rem;
-        justify-content: center;
-    }
-
-    header .nav-links li {
-        margin: 0 0.75rem;
-    }
-
-    /* Hero Section */
-    .hero-title {
-        font-size: 3rem;
-    }
-
-    .hero-subtitle {
-        font-size: 1.2rem;
-        margin-top: 0.5rem;
-    }
-
-    .cta-buttons {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .cta-buttons button {
-        width: 80%;
-        margin: 0.5rem 0;
-    }
-
-    /* About Section */
-    .about-grid {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .skills-container {
-        flex-direction: column;
-    }
-
-    .skill-category {
-        max-width: 100%;
-        text-align: center;
-    }
-
-    /* Education Section */
-    .edu-container {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .edu-item {
-        width: 100%;
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .edu-item img {
-        width: 120px;
-        margin-bottom: 1rem;
-    }
-
-    /* Projects Section */
-    .projects-grid {
-        flex-direction: column;
-        align-items: center;
-        padding: 0 1rem;
-    }
-
-    .project-card {
-        width: 100%;
-        max-width: 350px;
-    }
-
-    /* Contact Section */
-    .contact-grid {
-        flex-direction: column;
-        align-items: center;
-        gap: 1rem;
-    }
-
-    .contact-item {
-        width: 80%;
-    }
+    cursor: pointer;
+    width: 200px;
+    text-align: center;
+    transition: background-color 0.3s ease;
 }
 
-@media screen and (max-width: 480px) {
-    .hero-title {
-        font-size: 2.5rem;
-    }
+.contact-item:hover {
+    background-color: #00ff7f;
+}
 
-    .hero-subtitle {
-        font-size: 1rem;
-    }
+.contact-item i {
+    font-size: 1.5rem;
+}
 
-    .cta-buttons button {
-        width: 90%;
-    }
+.contact-grid {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
 
-    .edu-item img {
-        width: 100px;
-    }
+/* Footer */
+footer {
+    background-color: #121212;
+    color: #fff;
+    text-align: center;
+    padding: 2rem;
+}
 
-    .project-card {
-        padding: 1.5rem;
-    }
+footer h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
 }
