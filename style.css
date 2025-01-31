@@ -413,3 +413,96 @@ footer h2 {
     font-size: 2rem;
     margin-bottom: 1.5rem;
 }
+
+
+@media screen and (max-width: 768px) {
+    /* Navigation */
+    header {
+        flex-direction: column;
+        padding: 1rem;
+    }
+
+    header .nav-links {
+        margin-top: 1rem;
+        justify-content: center;
+    }
+
+    header .nav-links li {
+        margin: 0 0.75rem;
+    }
+
+    /* Hero Section */
+    .hero-title {
+        font-size: 3rem;
+    }
+
+    .hero-subtitle {
+        font-size: 1.2rem;
+        margin-top: 0.5rem;
+    }
+
+    .cta-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .cta-buttons button {
+        width: 80%;
+        margin: 0.5rem 0;
+    }
+
+    /* About Section */
+    .about-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .skills-container {
+        flex-direction: column;
+    }
+
+    .skill-category {
+        max-width: 100%;
+        text-align: center;
+    }
+
+    /* Education Section */
+    .edu-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .edu-item {
+        width: 100%;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .edu-item img {
+        width: 120px;
+        margin-bottom: 1rem;
+    }
+
+    /* Projects Section */
+    .projects-grid {
+        flex-direction: column;
+        align-items: center;
+        padding: 0 1rem;
+    }
+
+    .project-card {
+        width: 100%;
+        max-width: 350px;
+    }
+
+    /* Contact Section */
+    .contact-grid {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .contact-item {
+        width: 80%;
+    }
+}
