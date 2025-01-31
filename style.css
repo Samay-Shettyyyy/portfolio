@@ -55,11 +55,10 @@ header .logo {
 }
 
 /* Hero Section */
-/* HERO SECTION */
 #hero {
     position: relative;
     width: 100%;
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -67,9 +66,9 @@ header .logo {
     color: white;
     background: transparent;
     overflow: hidden;
+    padding: 1rem;
 }
 
-/* Name - Big Bold Text */
 .hero-title {
     font-size: 5rem;
     font-weight: bold;
@@ -82,14 +81,20 @@ header .logo {
     animation: glow 2s ease-in-out infinite alternate;
 }
 
-/* Subtitle */
 .hero-subtitle {
     font-size: 1.5rem;
     font-weight: 300;
     margin-top: -10px;
 }
 
-/* Call-to-action Buttons */
+.cta-buttons {
+    display: flex;
+    gap: 1rem;
+    margin-top: 2rem;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
 .cta-buttons button {
     margin: 10px;
     padding: 12px 20px;
@@ -97,56 +102,185 @@ header .logo {
     font-weight: bold;
     color: white;
     background: #00ccff;
-    justify-content: center;
     border: none;
     border-radius: 5px;
     cursor: pointer;
     transition: all 0.3s ease;
+    width: auto;
+    min-width: 150px;
 }
 
-.cta-buttons button:hover {
-    background: #00ff99;
+/* About Section */
+#about {
+    padding: 3rem 1rem;
+    background-color: #1e1e1e;
 }
 
-/* Secondary Button */
-.cta-buttons .secondary {
-    background: #ff0066;
+.about-text {
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-radius: 8px;
+    max-width: 100%;
+    margin: 0 auto 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.cta-buttons .secondary:hover {
-    background: #ff3399;
+.skills-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    padding: 0 1rem;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
-/* Resume Button */
-.resume-btn {
-    background: linear-gradient(90deg, #00fbff, #ffffff); /* Matching gradient */
-    color: white;
-    border: none;
-    padding: 12px 20px;
-    font-size: 16px;
-    font-weight: 600;
-    cursor: pointer;
-    border-radius: 6px;
+/* Education Section */
+.edu-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 0 1rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.edu-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 1rem;
+}
+
+.edu-item img {
+    width: 120px;
+    height: auto;
+    object-fit: contain;
+}
+
+/* Projects Section */
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    padding: 0 1rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.project-card {
+    width: 100%;
+}
+
+/* Contact Section */
+.contact-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+    padding: 0 1rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.contact-item {
+    width: 100%;
     display: flex;
     align-items: center;
-    gap: 8px;
-    transition: all 0.3s ease;
     justify-content: center;
+    gap: 0.5rem;
 }
 
-/* PDF Icon styling */
-.resume-btn i {
-    font-size: 18px;
+/* Media Queries */
+@media screen and (max-width: 768px) {
+    /* Navigation */
+    header {
+        flex-direction: column;
+        padding: 1rem 0;
+    }
+
+    header .nav-links {
+        margin-top: 1rem;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    header .nav-links li {
+        margin: 0.5rem;
+    }
+
+    /* Hero Section */
+    .hero-title {
+        font-size: 2.5rem;
+    }
+
+    .hero-subtitle {
+        font-size: 1.2rem;
+    }
+
+    /* About Section */
+    .about-text {
+        padding: 15px;
+    }
+
+    .about-text p {
+        font-size: 0.9rem;
+    }
+
+    /* Education Section */
+    .edu-item {
+        padding: 1rem;
+    }
+
+    .edu-details h3 {
+        font-size: 1.2rem;
+    }
+
+    .edu-details p {
+        font-size: 0.9rem;
+    }
 }
 
-/* Hover Effect */
-.resume-btn:hover {
-    background: linear-gradient(90deg, #00ff99, #ffffff); /* Lighter gradient on hover */
+@media screen and (max-width: 480px) {
+    /* Hero Section */
+    .hero-title {
+        font-size: 2rem;
+    }
+
+    .hero-subtitle {
+        font-size: 1rem;
+    }
+
+    .cta-buttons button {
+        width: 100%;
+        margin: 5px 0;
+    }
+
+    /* Projects Section */
+    .project-card {
+        padding: 1.5rem;
+    }
+
+    .project-content h3 {
+        font-size: 1.2rem;
+    }
+
+    .project-content p {
+        font-size: 0.9rem;
+    }
+
+    /* Contact Section */
+    .contact-item {
+        font-size: 1rem;
+        padding: 0.8rem;
+    }
+
+    .contact-item i {
+        font-size: 1.2rem;
+    }
 }
 
-
-
-/* Glow Effect */
+/* Animation */
 @keyframes glow {
     from {
         text-shadow: 0 0 10px #00ff99, 0 0 20px #00ccff;
@@ -156,261 +290,13 @@ header .logo {
     }
 }
 
-/* MATRIX BACKGROUND */
+/* Background Canvas */
 #matrix-bg {
-    position: fixed;  /* Fix it to the viewport */
+    position: fixed;
     top: 0;
     left: 0;
     width: 100vw;
     height: 100vh;
-    z-index: -1;  /* Send it to the background */
-    pointer-events: none;  /* Prevent interactions */
-}
-
-
-
-#hero::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: url('matrix-bg.png') no-repeat center center/cover;
-    opacity: 0.2;
     z-index: -1;
-}
-
-.cta-buttons {
-    display: flex;
-    gap: 1rem;
-    margin-top: 2rem;
-}
-
-button {
-    background-color: #00ff66;
-    border: none;
-    padding: 1rem 2rem;
-    font-size: 1.2rem;
-    cursor: pointer;
-    color: #000000;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
-}
-
-button.secondary {
-    background-color: #00ff66;
-    color: #000000;
-}
-
-button:hover {
-    background-color: #00b37a;
-}
-
-button.secondary:hover {
-    background-color: #444;
-}
-
-/* About Section */
-#about {
-    padding: 5rem 0;
-    background-color: #1e1e1e;
-}
-
-h2 {
-    font-size: 2.5rem;
-    text-align: center;
-    margin-bottom: 30px;
-}
-
-.section-content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.about-grid {
-    display: flex;
-    gap: 2rem;
-}
-
-.about-text {
-    display: flex;
-    justify-content: center; /* Centers the text horizontally */
-    align-items: center;     /* Centers the text vertically */
-    text-align: center;      /* Ensures the text inside the div is centered */
-    padding: 20px;           /* Adds padding around the text */
-    background-color: #f4f4f4; /* Light background for the section */
-    border-radius: 8px;      /* Rounded corners for a soft look */
-    max-width: 800px;        /* Sets a max width to prevent it from becoming too wide */
-    margin: 0 auto;          /* Centers the div horizontally in the page */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow for depth */
-    margin-bottom: 30px; 
-}
-
-.about-text p {
-    font-size: 16px;         /* Controls the font size */
-    color: #333;             /* Sets the text color */
-    line-height: 1.6;        /* Increases line spacing for readability */
-    font-weight: 400;        /* Makes the font weight normal */
-    max-width: 700px;        /* Ensures text doesn't stretch too far */
-    margin: 0 auto;          /* Ensures the paragraph is centered */
-}
-.skills-container {
-    display: flex;
-    gap: 2rem;
-}
-
-.skill-category {
-    max-width: 250px;
-}
-
-.skill-tags {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.5rem;
-}
-
-.skill-tags span {
-    background-color: #333;
-    padding: 0.5rem;
-    border-radius: 3px;
-    font-size: 0.9rem;
-}
-
-/* Education Section */
-#education {
-    background-color: #121212;
-    padding: 3rem 0;
-}
-
-.edu-container {
-    display: flex;
-    gap: 3rem;
-    justify-content: center;
-}
-
-.edu-item img {
-    width: 150px;  /* Adjust the width as needed */
-    height: auto;
-    object-fit: contain;
-}
-
-.edu-item {
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-}
-
-.edu-details {
-    color: #fff;
-}
-
-.edu-details h3 {
-    font-size: 1.5rem;
-    font-weight: 600;
-}
-
-.edu-details p {
-    font-size: 1rem;
-}
-
-/* Projects Section */
-#projects {
-    background-color: #1e1e1e;
-    padding: 4rem 0;
-}
-
-.projects-grid {
-    display: flex;
-    gap: 2rem;
-    justify-content: center;
-}
-
-.project-card {
-    background-color: #222;
-    padding: 2rem;
-    width: 300px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    transition: transform 0.3s ease;
-}
-
-.project-card:hover {
-    transform: scale(1.05);
-}
-
-.project-content h3 {
-    font-size: 1.4rem;
-    font-weight: 600;
-}
-
-.project-content p {
-    margin-top: 1rem;
-}
-
-.project-tags {
-    margin-top: 1rem;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.5rem;
-}
-
-.project-tags span {
-    background-color: #333;
-    padding: 0.5rem;
-    border-radius: 3px;
-    font-size: 0.9rem;
-}
-
-/* Contact Section */
-#contact {
-    background-color: transparent;
-    color: #fff;
-    padding: 3rem 0;
-}
-
-.contact-container {
-    text-align: center;
-}
-
-.contact-item {
-    display: inline-block;
-    background-color: #222;
-    color: #fff;
-    padding: 1rem;
-    margin: 0.5rem;
-    border-radius: 5px;
-    font-size: 1.2rem;
-    cursor: pointer;
-    width: 200px;
-    text-align: center;
-    transition: background-color 0.3s ease;
-}
-
-.contact-item:hover {
-    background-color: #00ff7f;
-}
-
-.contact-item i {
-    font-size: 1.5rem;
-}
-
-.contact-grid {
-    display: flex;
-    justify-content: center;
-    gap: 2rem;
-}
-
-/* Footer */
-footer {
-    background-color: #121212;
-    color: #fff;
-    text-align: center;
-    padding: 2rem;
-}
-
-footer h2 {
-    font-size: 2rem;
-    margin-bottom: 1.5rem;
+    pointer-events: none;
 }
