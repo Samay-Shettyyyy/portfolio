@@ -3,87 +3,202 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Samay Shetty - ML Engineer & Developer</title>
+    
+    <!-- SEO Meta Tags -->
+    <title>Samay U Shetty - CS Student & AI/ML Researcher</title>
+    <meta name="description" content="Samay U Shetty - Computer Science Graduate Student at RIT specializing in AI, Machine Learning, NLP, and Software Systems. Published researcher with expertise in LLMs, RAG, and Neural Networks.">
+    <meta name="keywords" content="Samay Shetty, Computer Science Student, RIT, AI Research, Machine Learning, NLP, Software Systems, Python, TensorFlow, PyTorch, LLM, RAG, Computer Vision">
+    <meta name="author" content="Samay U Shetty">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Samay U Shetty - CS Student & AI/ML Researcher">
+    <meta property="og:description" content="Computer Science Graduate Student at RIT with expertise in AI, ML, NLP, and Software Systems. Published researcher with hands-on experience in scalable ML systems.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://samay-shettyyyy.github.io/portfolio/">
+    <meta property="og:image" content="https://samay-shettyyyy.github.io/portfolio/preview.jpg">
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Samay U Shetty - CS Student & AI/ML Researcher">
+    <meta name="twitter:description" content="Computer Science Graduate Student at RIT specializing in AI, ML, NLP, and Software Systems. Published researcher with expertise in Python, TensorFlow, PyTorch.">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="/s.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/s.png">
+    <link rel="alternate icon" type="image/svg+xml" href="/favicon.svg">
+    <meta name="theme-color" content="#0a0a0a">
+    
+    <!-- Stylesheets -->
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&family=Inter:wght@400;600&display=swap" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Samay U Shetty",
+      "jobTitle": "Computer Science Graduate Student & AI/ML Researcher",
+      "description": "Computer Science Graduate Student at RIT specializing in AI, ML, NLP, and Software Systems",
+      "url": "https://samay-shettyyyy.github.io/portfolio/",
+      "sameAs": [
+        "https://linkedin.com/in/samay-shetty",
+        "https://github.com/Samay-Shettyyyy"
+      ],
+      "email": "samayshetty7103@gmail.com",
+      "telephone": "+1-585-230-7406",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Rochester",
+        "addressRegion": "NY",
+        "addressCountry": "US"
+      },
+      "alumniOf": [
+        {
+          "@type": "EducationalOrganization",
+          "name": "Rochester Institute of Technology",
+          "location": "Rochester, NY"
+        },
+        {
+          "@type": "EducationalOrganization", 
+          "name": "Vidyalankar Institute of Technology",
+          "location": "Mumbai, India"
+        }
+      ]
+    }
+    </script>
 </head>
 <body>
     <canvas id="matrix-bg"></canvas>
 
+    <!-- Navigation Header -->
     <header>
-        <nav>
-            <div class="logo">
+        <nav class="container nav-bar" aria-label="Primary">
+            <div class="logo" aria-label="Home">
                 <span class="bracket">{</span>
-                Samay Shetty
+                Samay U Shetty
                 <span class="bracket">}</span>
             </div>
-            <ul class="nav-links">
-                <li><a href="#about">About</a></li>
-                <li><a href="#education">Education</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
+            <ul class="nav-links" role="menubar">
+                <li role="none"><a role="menuitem" href="#about">About</a></li>
+                <li role="none"><a role="menuitem" href="#experience">Experience</a></li>
+                <li role="none"><a role="menuitem" href="#education">Education</a></li>
+                <li role="none"><a role="menuitem" href="#projects">Projects</a></li>
+                <li role="none"><a role="menuitem" href="#publications">Publications</a></li>
+                <li role="none"><a role="menuitem" href="#contact">Contact</a></li>
             </ul>
+            <div class="social-links">
+                <a href="https://github.com/Samay-Shettyyyy" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                <a href="https://linkedin.com/in/samay-shetty" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                <a href="https://scholar.google.com/citations?user=z1dDHnIAAAAJ&hl=en" target="_blank" rel="noopener noreferrer" aria-label="Google Scholar"><i class="fas fa-graduation-cap"></i></a>
+            </div>
+            <button class="mobile-menu-toggle" aria-label="Toggle navigation" aria-expanded="false">
+                <i class="fas fa-bars"></i>
+            </button>
         </nav>
     </header>
 
+    <!-- Hero Section -->
     <section id="hero">
-        <div class="hero-content">
-            <h1 class="hero-title">Samay Shetty</h1>
-            <p class="hero-subtitle">Machine Learning | AI | Software Development</p>
-            
+        <div class="hero-content container">
+            <h1 class="hero-title">Samay U Shetty</h1>
+            <p class="hero-subtitle">Computer Science Graduate Student | AI/ML Researcher</p>
+            <p class="hero-description">
+                Specializing in AI, Machine Learning, NLP & Software Systems<br>
+                Published researcher with hands-on experience in scalable ML systems
+            </p>
             <div class="cta-buttons">
-                <button onclick="document.getElementById('projects').scrollIntoView({ behavior: 'smooth' });">
-                    View Projects <i class="fas fa-code"></i>
+                <button onclick="document.getElementById('projects').scrollIntoView({ behavior: 'smooth' });" class="primary-btn">
+                    <i class="fas fa-code"></i> View Projects
                 </button>
-                <button onclick="document.getElementById('contact').scrollIntoView({ behavior: 'smooth' });" class="secondary">
-                    Contact Me <i class="fas fa-paper-plane"></i>
+                <button onclick="document.getElementById('contact').scrollIntoView({ behavior: 'smooth' });" class="secondary-btn">
+                    <i class="fas fa-paper-plane"></i> Contact Me
                 </button>
-                <button onclick="window.open('resume.pdf', '_blank');" class="resume-btn">
-                    View Resume <i class="fas fa-file-pdf"></i>
-                </button>
+                <a href="resume.pdf" target="_blank" rel="noopener noreferrer" class="resume-btn" aria-label="Open resume PDF">
+                    <i class="fas fa-file-pdf"></i> View Resume
+                </a>
             </div>
         </div>
-        <canvas id="matrix-bg"></canvas>
     </section>
-    
 
+    <!-- About Section -->
     <section id="about">
-        <div class="section-content">
-            <h2>&lt;About Me /&gt;</h2>
-            <div class="about-text">
-                <p>Machine Learning Engineer and Software Developer specializing in Generative AI, Computer Vision, and Natural Language Processing. Currently pursuing Master's in Computer Science at RIT, with a passion for pushing the boundaries of AI technology.</p>
-            </div>
-            <div class="about-grid">
-                <div class="skills-container">
+        <div class="container">
+            <h2 class="section-title">&lt;About Me /&gt;</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p class="lead">
+                        Computer Science Graduate Student at Rochester Institute of Technology with a passion for 
+                        AI, Machine Learning, and Software Systems. Published researcher with hands-on experience 
+                        in building scalable ML systems, applied NLP research, and developing innovative solutions 
+                        in the intersection of AI and software engineering.
+                    </p>
+                </div>
+                <div class="skills-grid">
                     <div class="skill-category">
-                        <h3>Core Technologies</h3>
+                        <h3><i class="fas fa-code"></i> Programming Languages</h3>
                         <div class="skill-tags">
                             <span>Python</span>
-                            <span>TensorFlow</span>
-                            <span>PyTorch</span>
-                            <span>OpenCV</span>
-                            <span>LangChain</span>
-                        </div>
-                    </div>
-                    <div class="skill-category">
-                        <h3>Development</h3>
-                        <div class="skill-tags">
                             <span>Java</span>
                             <span>C++</span>
+                            <span>C</span>
                             <span>SQL</span>
-                            <span>HTML/CSS</span>
-                            <span>MATLAB</span>
+                            <span>JavaScript</span>
                         </div>
                     </div>
                     <div class="skill-category">
-                        <h3>Expertise</h3>
+                        <h3><i class="fas fa-brain"></i> AI/ML Frameworks</h3>
                         <div class="skill-tags">
-                            <span>Deep Learning</span>
+                            <span>TensorFlow</span>
+                            <span>PyTorch</span>
+                            <span>Hugging Face</span>
+                            <span>LangChain</span>
+                            <span>Scikit-learn</span>
+                            <span>OpenCV</span>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h3><i class="fas fa-cogs"></i> Software Systems</h3>
+                        <div class="skill-tags">
+                            <span>RESTful APIs</span>
+                            <span>Microservices</span>
+                            <span>Database Design</span>
+                            <span>System Architecture</span>
+                            <span>Version Control</span>
+                            <span>Testing</span>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h3><i class="fas fa-database"></i> Data & Tools</h3>
+                        <div class="skill-tags">
+                            <span>NumPy</span>
+                            <span>Pandas</span>
+                            <span>MongoDB</span>
+                            <span>Git/GitHub</span>
+                            <span>Docker</span>
+                            <span>Kubernetes</span>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h3><i class="fas fa-cloud"></i> Cloud & DevOps</h3>
+                        <div class="skill-tags">
+                            <span>AWS</span>
+                            <span>GCP</span>
+                            <span>CI/CD Pipelines</span>
+                            <span>GitHub Actions</span>
+                            <span>MLOps</span>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h3><i class="fas fa-robot"></i> Research Focus</h3>
+                        <div class="skill-tags">
+                            <span>Natural Language Processing</span>
+                            <span>Large Language Models</span>
+                            <span>Retrieval-Augmented Generation</span>
                             <span>Computer Vision</span>
-                            <span>Generative AI</span>
-                            <span>NLP</span>
-                            <span>RAG</span>
+                            <span>Neural Networks</span>
+                            <span>Deep Learning</span>
                         </div>
                     </div>
                 </div>
@@ -91,110 +206,272 @@
         </div>
     </section>
 
+    <!-- Experience Section -->
+    <section id="experience">
+        <div class="container">
+            <h2 class="section-title">&lt;Research & Experience /&gt;</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h3>Software Developer (ML Research)</h3>
+                        <h4>Lab of Population Intelligence, RIT</h4>
+                        <p class="timeline-date">Summer 2025</p>
+                        <ul>
+                            <li>Researched annotator disagreement in supervised learning and updated DisCo (Distribution from Context), a neural model predicting full label distributions by modeling annotator-item pairs</li>
+                            <li>Developed scalable ML pipelines for six benchmark NLP datasets, incorporating annotator metadata embeddings, ensemble evaluation, and GPU-accelerated training</li>
+                            <li>Enhanced DisCo with refined loss functions and metadata integration, achieving ~39% performance improvement and contributing to a Top-9 global leaderboard ranking (LeWiDi 2025) and acceptance to EMNLP Conference 2025</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h3>ML Developer (Research Assistant)</h3>
+                        <h4>Vidyalankar Institute of Technology</h4>
+                        <p class="timeline-date">Aug–Dec 2023</p>
+                        <ul>
+                            <li>Developed diabetes prediction model with Random Forest, improving accuracy by 8%</li>
+                            <li>Optimized preprocessing pipelines, reducing model training time by 40%</li>
+                            <li>Co-authored peer-reviewed paper on ML in healthcare diagnostics published in TANZ</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
     <section id="education">
-        <h2>&lt;Education /&gt;</h2>
-        <div class="edu-container">
-            <div class="edu-item">
-                <img src="new_RIT_logo1_RGB_0.png" alt="RIT Logo">
-                <div class="edu-details">
-                    <h3>Rochester Institute of Technology</h3>
-                    <p>Master's in Computer Science</p>
-                    <p><em>2024 - Present</em></p>
+        <div class="container">
+            <h2 class="section-title">&lt;Education /&gt;</h2>
+            <div class="education-grid">
+                <div class="edu-item current">
+                    <img src="new_RIT_logo1_RGB_0.png" alt="Rochester Institute of Technology Logo" class="edu-logo">
+                    <div class="edu-details">
+                        <h3>Rochester Institute of Technology</h3>
+                        <p class="degree">Master's in Computer Science</p>
+                        <p class="specialization">Focus: AI, Machine Learning, Software Systems</p>
+                        <p class="duration">Aug 2024 – Present</p>
+                        <p class="location">Rochester, NY</p>
+                        <div class="edu-highlights">
+                            <span class="highlight">Published Research</span>
+                            <span class="highlight">ML Research Assistant</span>
+                            <span class="highlight">Conference Publications</span>
+                        </div>
+                    </div>
                 </div>
-            </div>
-            <div class="edu-item">
-                <img src="VIT.png" alt="VIT Logo">
-                <div class="edu-details">
-                    <h3>Vidyalankar Institute of Technology</h3>
-                    <p>B.E. in Electronics & Telecommunication</p>
-                    <p>Data Science (Honors) - 9.45/10 CGPA</p>
-                    <p><em>2020 - 2024</em></p>
+                <div class="edu-item">
+                    <img src="VIT.png" alt="Vidyalankar Institute of Technology Logo" class="edu-logo">
+                    <div class="edu-details">
+                        <h3>University of Mumbai</h3>
+                        <p class="degree">Bachelor's in Electronics & Telecommunication</p>
+                        <p class="minor">Minor in Data Science</p>
+                        <p class="duration">2020 – 2024</p>
+                        <p class="location">Mumbai, India</p>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
+    <!-- Projects Section -->
     <section id="projects">
-        <h2>&lt;Projects /&gt;</h2>
-        <div class="projects-grid">
-          <a href="https://bizrizzai.onrender.com" class="project-card-link" target="_blank">
-            <div class="project-card">
-              <div class="project-content">
-                <h3>BizzRizz</h3>
-                <p>AI-powered restaurant consulting tool that analyzes competitor data via Google Places API, processes customer feedback using Gemini AI, and generates actionable business insights through Paychex API integration.</p>
-                <div class="project-tags">
-                  <span>Python</span>
-                  <span>Gemini AI</span>
-                  <span>Flask</span>
+        <div class="container">
+            <h2 class="section-title">&lt;Featured Projects /&gt;</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3>Savora AI</h3>
+                        <div class="project-links">
+                            <a href="https://legendary-zabaione-61d5f5.netlify.app" class="project-link" target="_blank" rel="noopener noreferrer" aria-label="Savora AI live site">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <p class="project-description">
+                        AI-powered restaurant operations platform using neuro-symbolic AI and Graph RAG for financial reasoning and real-time decision support. Built pipelines and warehousing to integrate multi-source restaurant data (sales, inventory, scheduling).
+                    </p>
+                    <div class="project-tags">
+                        <span>Python</span>
+                        <span>SQLite</span>
+                        <span>RESTful API</span>
+                        <span>Graph RAG</span>
+                        <span>Neuro-symbolic AI</span>
+                        <span>System Design</span>
+                    </div>
                 </div>
-              </div>
-            </div>
-          </a>
-          
-          <a href="https://tinyurl.com/4h3s6jaw" class="project-card-link" target="_blank">
-            <div class="project-card">
-              <div class="project-content">
-                <h3>MatSAR</h3>
-                <p>ML tool for PolSAR data classification implementing ANN, SVM, Decision Trees, Random Forest, and XGBoost algorithms with a MATLAB-based interface for improved accuracy over existing solutions.</p>
-                <div class="project-tags">
-                  <span>Machine Learning</span>
-                  <span>MATLAB</span>
-                  <span>GUI Development</span>
+
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3>BizRizz</h3>
+                        <div class="project-links">
+                            <a href="https://bizrizzai.onrender.com" class="project-link" target="_blank" rel="noopener noreferrer" aria-label="BizRizz live demo">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <p class="project-description">
+                        Agentic AI Platform for business consultancies. Built production-ready AI agent to analyze competitor data and customer sentiment, offering strategic recommendations for businesses.
+                    </p>
+                    <div class="project-tags">
+                        <span>Python</span>
+                        <span>Flask</span>
+                        <span>Gemini AI</span>
+                        <span>Google Places API</span>
+                        <span>Paychex API</span>
+                        <span>Full-stack</span>
+                    </div>
                 </div>
-              </div>
-            </div>
-          </a>
-          
-          <a href="https://github.com/Samay-Shettyyyy/Video_captioning.git" class="project-card-link" target="_blank">
-            <div class="project-card">
-              <div class="project-content">
-                <h3>GestureAI</h3>
-                <p>Computer vision system that detects hand gestures to trigger object recognition and captioning using OpenCV, MediaPipe, and BLIP transformer models for real-time visual understanding.</p>
-                <div class="project-tags">
-                  <span>Computer Vision</span>
-                  <span>Transformers</span>
-                  <span>Real-time AI</span>
+
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3>MatSAR</h3>
+                        <div class="project-links">
+                            <a href="https://tinyurl.com/4h3s6jaw" class="project-link" target="_blank" rel="noopener noreferrer" aria-label="MatSAR demo">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <p class="project-description">
+                        ML-Driven PolSAR Data Classification Tool. Led development of custom ML tool outperforming PolSARPro in SAR image classification accuracy and UI accessibility.
+                    </p>
+                    <div class="project-tags">
+                        <span>C++</span>
+                        <span>MATLAB</span>
+                        <span>Machine Learning</span>
+                        <span>GUI Development</span>
+                        <span>Computer Vision</span>
+                        <span>Research</span>
+                    </div>
                 </div>
-              </div>
+
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3>Amazon Packaging Size Prediction</h3>
+                        <div class="project-links">
+                            <!-- Link removed as requested -->
+                        </div>
+                    </div>
+                    <p class="project-description">
+                        Developed ML model predicting optimal packaging sizes by training over 200k data points using Random Forest. Utilized NLP techniques to extract and process product specifications.
+                    </p>
+                    <div class="project-tags">
+                        <span>Python</span>
+                        <span>Pandas</span>
+                        <span>NLP</span>
+                        <span>Random Forest</span>
+                        <span>Data Analysis</span>
+                        <span>Feature Engineering</span>
+                    </div>
+                </div>
             </div>
-          </a>
         </div>
     </section>
 
-    <footer id="contact">
-        <div class="contact-container">
-            <h2>&lt;Contact /&gt;</h2>
-            <div class="contact-grid">
-                <a href="mailto:samay.shetty.2003@gmail.com" class="contact-item">
-                    <i class="fas fa-envelope"></i>
-                    <span>Email</span>
-                </a>
-                <a href="https://www.linkedin.com/in/samay-shetty" target="_blank" class="contact-item">
-                    <i class="fab fa-linkedin"></i>
-                    <span>LinkedIn</span>
-                </a>
-                <a href="https://github.com/Samay-Shettyyyy" target="_blank" class="contact-item">
-                    <i class="fab fa-github"></i>
-                    <span>Github</span>
-                </a>
-                <a href="tel:+15852307406" class="contact-item">
-                    <i class="fas fa-phone"></i>
-                    <span>Phone</span>
-                </a>
-                
-                <div class="contact-item">
-                    <i class="fas fa-map-marker-alt"></i>
-                    <span>Rochester, NY</span>
+    <!-- Publications Section -->
+    <section id="publications">
+        <div class="container">
+            <h2 class="section-title">&lt;Publications & Research /&gt;</h2>
+            <div class="publications-list">
+                <div class="publication-item">
+                    <div class="publication-icon">
+                        <i class="fas fa-file-alt"></i>
+                    </div>
+                    <div class="publication-content">
+                        <h3><a href="https://arxiv.org/abs/2508.08163" target="_blank" rel="noopener noreferrer" aria-label="ArXiv paper">Improving Distributional Predictions via Metadata and Loss Reweighting with DisCo</a></h3>
+                        <p class="publication-venue">ArXiv 2025</p>
+                        <p class="publication-description">Research on enhancing neural models for predicting full label distributions in supervised learning tasks. Focus on annotator disagreement modeling and metadata integration for improved performance.</p>
+                    </div>
                 </div>
+                <div class="publication-item">
+                    <div class="publication-icon">
+                        <i class="fas fa-file-alt"></i>
+                    </div>
+                    <div class="publication-content">
+                        <h3><a href="https://www.ijcaonline.org/archives/volume187/number3/shetty-2025-ijca-924824.pdf" target="_blank" rel="noopener noreferrer" aria-label="IJCA paper link pending">Matsar: A Comprehensive Machine Learning Approach for Polsar Data Processing</a></h3>
+                        <p class="publication-venue">IJCA 2025</p>
+                        <p class="publication-description">Comprehensive approach to machine learning applications in Polarimetric Synthetic Aperture Radar data processing. Focus on classification algorithms and GUI development for improved accessibility.</p>
+                    </div>
+                </div>
+                <div class="publication-item">
+                    <div class="publication-icon">
+                        <i class="fas fa-file-alt"></i>
+                    </div>
+                    <div class="publication-content">
+                        <h3><a href="https://ieeexplore.ieee.org/abstract/document/11105096" target="_blank" rel="noopener noreferrer" aria-label="IEEE paper link pending">Polsarhub: A Large-Scale Repository for Polsar Data</a></h3>
+                        <p class="publication-venue">IEEE IGARSS 2024</p>
+                        <p class="publication-description">Development of a comprehensive repository for Polarimetric SAR data to support research and development in remote sensing and computer vision applications.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <footer id="contact">
+        <div class="container">
+            <h2 class="section-title">&lt;Let's Connect /&gt;</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <p class="contact-description">I'm always interested in discussing research opportunities, internships, collaborations, or just chatting about AI/ML, Computer Science, and technology. Feel free to reach out!</p>
+                </div>
+                <div class="contact-grid">
+                    <a href="mailto:samayshetty7103@gmail.com" class="contact-item" aria-label="Send Email">
+                        <i class="fas fa-envelope"></i>
+                        <div class="contact-details">
+                            <span class="contact-label">Email</span>
+                            <span class="contact-value">samayshetty7103@gmail.com</span>
+                        </div>
+                    </a>
+                    <a href="https://linkedin.com/in/samay-shetty" target="_blank" rel="noopener noreferrer" class="contact-item" aria-label="Open LinkedIn">
+                        <i class="fab fa-linkedin"></i>
+                        <div class="contact-details">
+                            <span class="contact-label">LinkedIn</span>
+                            <span class="contact-value">linkedin.com/in/samay-shetty</span>
+                        </div>
+                    </a>
+                    <a href="https://github.com/Samay-Shettyyyy" target="_blank" rel="noopener noreferrer" class="contact-item" aria-label="Open GitHub">
+                        <i class="fab fa-github"></i>
+                        <div class="contact-details">
+                            <span class="contact-label">GitHub</span>
+                            <span class="contact-value">github.com/Samay-Shettyyyy</span>
+                        </div>
+                    </a>
+                    <a href="https://scholar.google.com/citations?user=z1dDHnIAAAAJ&hl=en" target="_blank" rel="noopener noreferrer" class="contact-item" aria-label="Open Google Scholar">
+                        <i class="fas fa-graduation-cap"></i>
+                        <div class="contact-details">
+                            <span class="contact-label">Google Scholar</span>
+                            <span class="contact-value">scholar.google.com/citations?user=z1dDHnIAAAAJ</span>
+                        </div>
+                    </a>
+                    <a href="tel:+15852307406" class="contact-item" aria-label="Call phone">
+                        <i class="fas fa-phone"></i>
+                        <div class="contact-details">
+                            <span class="contact-label">Phone</span>
+                            <span class="contact-value">+1 (585) 230-7406</span>
+                        </div>
+                    </a>
+                    <div class="contact-item" aria-label="Location">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div class="contact-details">
+                            <span class="contact-label">Location</span>
+                            <span class="contact-value">Rochester, NY</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Samay U Shetty. All rights reserved.</p>
             </div>
         </div>
     </footer>
     
     <script>
+        // Enhanced Matrix Background Animation
         const canvas = document.getElementById('matrix-bg');
         const ctx = canvas.getContext('2d');
 
-        // Set canvas size
         function resizeCanvas() {
             canvas.width = window.innerWidth;
             canvas.height = window.innerHeight;
@@ -202,100 +479,82 @@
         resizeCanvas();
         window.addEventListener('resize', resizeCanvas);
 
-        // Particle class for geometric shapes
         class Particle {
-            constructor() {
-                this.reset();
-            }
-
+            constructor() { this.reset(); }
             reset() {
                 this.x = Math.random() * canvas.width;
                 this.y = Math.random() * canvas.height;
                 this.size = Math.random() * 2 + 1;
-                this.speedX = (Math.random() - 0.5) * 0.5;
-                this.speedY = (Math.random() - 0.5) * 0.5;
-                this.opacity = Math.random() * 0.5 + 0.2;
-                this.shape = Math.floor(Math.random() * 3); // 0: square, 1: triangle, 2: circle
+                this.speedX = (Math.random() - 0.5) * 0.3;
+                this.speedY = (Math.random() - 0.5) * 0.3;
+                this.opacity = Math.random() * 0.4 + 0.1;
+                this.shape = Math.floor(Math.random() * 3);
             }
-
             update() {
                 this.x += this.speedX;
                 this.y += this.speedY;
-
-                // Wrap around screen
                 if (this.x < 0) this.x = canvas.width;
                 if (this.x > canvas.width) this.x = 0;
                 if (this.y < 0) this.y = canvas.height;
                 if (this.y > canvas.height) this.y = 0;
             }
-
             draw() {
                 ctx.save();
                 ctx.beginPath();
                 ctx.fillStyle = `rgba(0, 255, 200, ${this.opacity})`;
-                ctx.shadowColor = 'rgba(0, 255, 200, 0.5)';
-                ctx.shadowBlur = 15;
-
+                ctx.shadowColor = 'rgba(0, 255, 200, 0.3)';
+                ctx.shadowBlur = 10;
                 switch (this.shape) {
-                    case 0: // Square
-                        ctx.rect(this.x, this.y, this.size * 3, this.size * 3);
-                        break;
-                    case 1: // Triangle
-                        ctx.moveTo(this.x, this.y - this.size * 2);
-                        ctx.lineTo(this.x - this.size * 2, this.y + this.size * 2);
-                        ctx.lineTo(this.x + this.size * 2, this.y + this.size * 2);
-                        break;
-                    case 2: // Circle
-                        ctx.arc(this.x, this.y, this.size * 2, 0, Math.PI * 2);
-                        break;
+                    case 0: ctx.rect(this.x, this.y, this.size * 2, this.size * 2); break;
+                    case 1: ctx.moveTo(this.x, this.y - this.size * 1.5); ctx.lineTo(this.x - this.size * 1.5, this.y + this.size * 1.5); ctx.lineTo(this.x + this.size * 1.5, this.y + this.size * 1.5); break;
+                    case 2: ctx.arc(this.x, this.y, this.size * 1.5, 0, Math.PI * 2); break;
                 }
-
                 ctx.fill();
                 ctx.restore();
             }
         }
 
-        // Create particle array
-        const particles = Array.from({ length: 50 }, () => new Particle());
-
-        // Draw grid lines
+        const particles = Array.from({ length: 40 }, () => new Particle());
         function drawGrid() {
-            ctx.strokeStyle = 'rgba(0, 255, 200, 0.03)'; // Reduced opacity to 0.03
-            ctx.lineWidth = 0.3; // Reduced line width
-            
-            // Vertical lines with increased spacing
-            for (let x = 0; x < canvas.width; x += 80) { // Increased spacing to 80px
-                ctx.beginPath();
-                ctx.moveTo(x, 0);
-                ctx.lineTo(x, canvas.height);
-                ctx.stroke();
-            }
-            
-            // Horizontal lines with increased spacing
-            for (let y = 0; y < canvas.height; y += 80) { // Increased spacing to 80px
-                ctx.beginPath();
-                ctx.moveTo(0, y);
-                ctx.lineTo(canvas.width, y);
-                ctx.stroke();
-            }
+            ctx.strokeStyle = 'rgba(0, 255, 200, 0.02)';
+            ctx.lineWidth = 0.2;
+            for (let x = 0; x < canvas.width; x += 100) { ctx.beginPath(); ctx.moveTo(x, 0); ctx.lineTo(x, canvas.height); ctx.stroke(); }
+            for (let y = 0; y < canvas.height; y += 100) { ctx.beginPath(); ctx.moveTo(0, y); ctx.lineTo(canvas.width, y); ctx.stroke(); }
         }
-
-        // Animation loop
         function animate() {
-            ctx.fillStyle = 'rgba(0, 0, 0, 0.1)';
+            ctx.fillStyle = 'rgba(0, 0, 0, 0.05)';
             ctx.fillRect(0, 0, canvas.width, canvas.height);
-
             drawGrid();
-
-            particles.forEach(particle => {
-                particle.update();
-                particle.draw();
-            });
-
+            particles.forEach(p => { p.update(); p.draw(); });
             requestAnimationFrame(animate);
         }
-
         animate();
+
+        // Mobile Navigation Toggle
+        const mobileToggle = document.querySelector('.mobile-menu-toggle');
+        const navLinks = document.querySelector('.nav-links');
+        mobileToggle.addEventListener('click', () => {
+            const expanded = mobileToggle.getAttribute('aria-expanded') === 'true';
+            mobileToggle.setAttribute('aria-expanded', String(!expanded));
+            navLinks.classList.toggle('active');
+        });
+
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                const href = this.getAttribute('href');
+                if (!href || href === '#') return; // allow external placeholders
+                e.preventDefault();
+                const target = document.querySelector(href);
+                if (target) target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            });
+        });
+
+        // Header scroll effect
+        window.addEventListener('scroll', () => {
+            const header = document.querySelector('header');
+            if (window.scrollY > 100) header.classList.add('scrolled'); else header.classList.remove('scrolled');
+        });
     </script>
 </body>
 </html>
